@@ -1,0 +1,14 @@
+run wih ipcamera
+
+python3 detectnet-lpr.py --model=./networks/az_plate/az_plate_ssdmobilenetv1.onnx --class_labels=./networks/az_plate/labels.txt --input_blob=input_0 --input-codec=h264 --output_cvg=scores --output_bbox=boxes --overlay=lines --camera=rtsp://admin:admin@192.168.1.160
+
+
+run with webcam
+
+python3 detectnet-lpr.py --model=./networks/az_plate/az_plate_ssdmobilenetv1.onnx --class_labels=./networks/az_plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --overlay=lines --camera=/dev/video0
+
+
+# LPR_Notify token = 9rijSewvMnyK3np8jrxElsKCG1xCuUGS6ba59M4vGTH
+# LPR token = oQLDVrUPPsKflDUxU1upcvC5GhvSlR9tZltkUOpl3d6
+
+AI_LPR = RU0DHhrdPYndSpVCS0Lu83q30oINCPNDjT8QpvFhkGH
